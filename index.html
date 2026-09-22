@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MIS Sales Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>MIS Sales Dashboard</h1>
+
+    <div class="filters">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search customer or item..."
+      />
+
+      <select id="salesmanFilter">
+        <option value="">All Salesmen</option>
+      </select>
+
+      <select id="materialCentreFilter">
+        <option value="">All Material Centres</option>
+      </select>
+
+      <label>
+        From Date:
+        <input type="date" id="fromDate" />
+      </label>
+
+      <label>
+        To Date:
+        <input type="date" id="toDate" />
+      </label>
+
+      <button id="refreshButton">Refresh Data</button>
+    </div>
+    <h2>Add New Sale</h2>
+
+    <div class="add-sale-form">
+      <input type="date" id="newDate" placeholder="Date" />
+
+      <input type="text" id="newBillNo" placeholder="Vch/Bill No" />
+
+      <input type="text" id="newSalesman" placeholder="Salesman" />
+
+      <input type="text" id="newParticulars" placeholder="Particulars" />
+
+      <input type="text" id="newItem" placeholder="Item Details" />
+
+      <input type="number" id="newQty" placeholder="Quantity" />
+
+      <input type="text" id="newUnit" placeholder="Unit" />
+
+      <input type="number" id="newPrice" placeholder="Price" />
+
+      <input type="number" id="newAmount" placeholder="Amount" />
+
+      <button id="addSaleButton">Add Sale</button>
+    </div>
+
+    <p id="addSaleMessage"></p>
+    <h2>Salesman Summary</h2>
+
+    <div id="summaryContainer" class="summary-container"></div>
+
+    <p id="loading">Loading sales data...</p>
+
+    <p id="noData"></p>
+
+    <div id="error"></div>
+    <div id="error"></div>
+    <h2>Salesman Sales Chart</h2>
+
+    <div class="chart-container">
+      <canvas id="salesChart"></canvas>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th id="dateHeader">Date ↕</th>
+            <th>Vch/Bill No</th>
+            <th>Salesman</th>
+            <th>Particulars</th>
+            <th>Item Details</th>
+            <th id="qtyHeader">Qty ↕</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th id="amountHeader">Amount ↕</th>
+          </tr>
+        </thead>
+
+        <tbody id="salesTableBody"></tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
