@@ -55,7 +55,9 @@ Open the project in VS Code and run `index.html` using **Live Server**.
 ## Links
 
 **Live App:**  
-YOUR_DEPLOYED_APP_LINK
+   https://kunal-sharma-54.github.io/MIS-Sales-Dashboard/
 
 **Google Sheet:**  
-YOUR_GOOGLE_SHEET_LINK
+   https://docs.google.com/spreadsheets/d/1XX-pE8KGPNITp-TvCiF0-ow7a4N8ih9YK-mQBrtO8FA/edit?usp=sharing
+
+ 
